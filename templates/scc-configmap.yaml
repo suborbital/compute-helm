@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: suborbital
+  name: scc-config
+data:
+  scc-config.yaml: |-
+{{ .Files.Get "scc-config.yaml" | indent 4}}
