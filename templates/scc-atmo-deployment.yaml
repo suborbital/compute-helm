@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: atmo
-          image: suborbital/atmo:v0.4.2
+          image: suborbital/atmo:{{ .Values.SCCAtmoVersion }}
           command: ["atmo"]
 
           ports:
@@ -31,18 +31,17 @@ spec:
           env:
             - name: ATMO_HTTP_PORT
               value: "8080"
-            
+
             - name: ATMO_LOG_LEVEL
               value: "info"
 
             - name: ATMO_CONTROL_PLANE
               value: "scc-controlplane-service:8081"
-            
+
             - name: ATMO_HEADLESS
               value: "true"
 
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
