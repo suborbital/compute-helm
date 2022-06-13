@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-SCCVersion: "v0.3.0"
+SCCVersion: "v0.3.2"
 SCCAtmoVersion: "v0.4.4"
 EnvToken: "example-token"
 BuilderDomain: "builder.example.com"
