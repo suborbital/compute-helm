@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: atmo
-          image: suborbital/atmo:{{ .Values.SCCAtmoVersion }}
+          image: "suborbital/atmo:{{ .Values.SCCAtmoVersion }}"
           command: ["atmo"]
 
           ports:
